@@ -11,7 +11,7 @@ const NavBar = () => {
           <div className="flex items-center">
            <img src={logo} alt="Cocobee" className="h-22 w-40" />
           </div>
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-4 ">
             <a href="menu" className="text-gray-700 hover:text-gray-900">Menu</a>
             <a href="outlets" className="text-gray-700 hover:text-gray-900">Outlets</a>
             <a href="abouteus" className="text-gray-700 hover:text-gray-900">About Us</a>

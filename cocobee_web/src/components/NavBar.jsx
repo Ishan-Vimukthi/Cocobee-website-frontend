@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/Logo.png';
+import { FaFacebook, FaTiktok, FaInstagram } from 'react-icons/fa';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,12 +12,27 @@ const NavBar = () => {
           <div className="flex items-center">
            <img src={logo} alt="Cocobee" className="h-22 w-40" />
           </div>
-          <div className="hidden md:flex space-x-4 ">
+          <div className="hidden md:flex flex-grow justify-center space-x-4 ">
             <a href="menu" className="text-gray-700 hover:text-gray-900">Menu</a>
             <a href="outlets" className="text-gray-700 hover:text-gray-900">Outlets</a>
             <a href="abouteus" className="text-gray-700 hover:text-gray-900">About Us</a>
             <a href="contact" className="text-gray-700 hover:text-gray-900">Contact Us</a>
           </div>
+
+        <div className='flex items-center space-x-4'>
+        <div className="hidden md:flex space-x-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+                <FaFacebook className="w-6 h-6" />
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+                <FaTiktok className="w-6 h-6" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+                <FaInstagram className="w-6 h-6" />
+              </a>
+            </div>
+        </div>
+
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -40,6 +56,17 @@ const NavBar = () => {
             <a href="outlets" className="block text-gray-700 hover:text-gray-900">Outlets</a>
             <a href="abouteus" className="block text-gray-700 hover:text-gray-900">About Us</a>
             <a href="contact" className="block text-gray-700 hover:text-gray-900">Contact Us</a>
+            <div className="flex space-x-4 mt-2">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+          <FaFacebook className="w-6 h-6" />
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+          <FaTiktok className="w-6 h-6" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+          <FaInstagram className="w-6 h-6" />
+        </a>
+      </div>
           </div>
         </div>
       )}

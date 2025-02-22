@@ -57,13 +57,13 @@ const NavBar = () => {
             <a href="abouteus" className="block text-gray-700 hover:text-gray-900">About Us</a>
             <a href="contact" className="block text-gray-700 hover:text-gray-900">Contact Us</a>
             <div className="flex space-x-4 mt-2">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaFacebook className="w-6 h-6" />
         </a>
-        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaTiktok className="w-6 h-6" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaInstagram className="w-6 h-6" />
         </a>
       </div>

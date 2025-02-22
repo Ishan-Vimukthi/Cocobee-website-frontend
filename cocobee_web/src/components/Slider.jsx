@@ -1,50 +1,57 @@
-// import React from 'react'
-// import { useState, useEffect } from 'react'
-// import image1 from '../assets/Sliders/1.jpg'
-// import image2 from '../assets/Sliders/2.jpg'
-// import image3 from '../assets/Sliders/4.jpg'
+import { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-// const images = [image1, image2, image3];
+const images = [
+  '../src/assets/Sliders/1.png',
+  '../src/assets/Sliders/2.png',
+  '../src/assets/Sliders/4.png',
+];
 
+export default function Slider() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-// const Slider = () => {
-//     const [currentIndex, setCurrentIndex] = useState(0);
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
-//   // Auto-slide functionality
-//     useEffect(() => {
-//         const intervalId = setInterval(() => {
-//         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-//         }, 3000); // Change slide every 3 seconds
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
 
-//             return () => clearInterval(intervalId); // Cleanup interval on unmount
-//      }, []);
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
-//   return (
-//     <div className="relative w-full h-96 overflow-hidden">
-//       {/* Slider container */}
-//       <div className="flex transition-transform duration-500 ease-in-out"
-//            style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-//         {images.map((image, index) => (
-//           <div key={index} className="w-full flex-shrink-0">
-//             <img src={image}
-//                  alt={`Slide ${index + 1}`}
-//                  className="w-full h-96 object-cover" />
-//           </div>
-//         ))}
-//       </div>
-
-//       {/* Navigation dots */}
-//       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-//         {images.map((_, index) => (
-//           <button key={index}
-//                   onClick={() => setCurrentIndex(index)}
-//                   className={`w-3 h-3 rounded-full ${
-//                     currentIndex === index ? "bg-white" : "bg-gray-400"
-//                   }`} />
-//         ))}
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Slider
+  return (
+    <div className="relative w-full mx-auto">
+      <div className="overflow-hidden w-screen max-w-7xl mx-auto">
+        <img
+          src={images[currentIndex]}
+          alt="Slider"
+          className="w-full h-120 object-cover transition-all duration-1000 ease-in-out"
+        />
+      </div>
+      <button
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-opacity-50 p-2 rounded-full text-white"
+        onClick={prevSlide}
+      >
+        <FaChevronLeft />
+      </button>
+      <button
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-opacity-50 p-2 rounded-full text-white"
+        onClick={nextSlide}
+      >
+        <FaChevronRight />
+      </button>
+      <div className="flex justify-center mt-2 space-x-2">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={`h-2 w-2 rounded-full ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}

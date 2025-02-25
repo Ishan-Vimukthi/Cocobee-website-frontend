@@ -13,7 +13,9 @@ const Home = () => {
       <WelcomeText/>
       <Slider/>
       <MiddleText/>
-      <MiddleImage/>
+      <div className="flex justify-center items-center ">
+        <MiddleImage/>
+      </div>
       <Footer/>
     </div>
   )

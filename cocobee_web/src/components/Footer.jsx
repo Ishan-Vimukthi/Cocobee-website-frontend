@@ -3,18 +3,29 @@ import { FaTiktok, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="relative">
-        <div className="relative flex justify-center items-center">
-            <img src='./Footer.png'/>
-            <div className='absolute inset-0 flex justify-center items-center pt-25'>
-            <p className='text-white font-extrabold pr-20 text-2xl'>FAQS</p>
-            <a href='https://www.tiktok.com/' target='_blank' rel='noreferrer'><FaTiktok className='text-white text-2xl mx-2'/></a>
-            <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'><FaFacebook className='text-white text-2xl mx-2'/></a>
-            <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'><FaInstagram className='text-white text-2xl mx-2'/></a>
-            <p className='text-white pl-20'>© 2021 MR.COCOBEE. ALL RIGHTS RESERVED.</p>
-            </div>
+    
+    <div className="relative w-full h-[450px] bg-cover bg-center"
+      style={{ backgroundImage: "url('/Footer.png')" }}>
+      
+      {/* Content Overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center h">
+        <h3 className="text-lg font-bold">FAQs</h3>
+        
+        {/* Social Icons */}
+        <div className="flex gap-6 mt-4">
+          <FaFacebook className="w-6 h-6" />
+          <FaTiktok className="w-6 h-6" />
+          <FaInstagram className="w-6 h-6" />
         </div>
-    </footer>
+
+        {/* Copyright */}
+        <p className="mt-4 text-xs">
+          © COPYRIGHT 2025 YI HAI CENTURY ENTERPRISE PTE LTD. ALL RIGHTS RESERVED.
+        </p>
+        <p className="text-xs underline">WEBSITE BY CREATIVE EWORLD PTE LTD</p>
+      </div>
+
+    </div>
   )
 }
 

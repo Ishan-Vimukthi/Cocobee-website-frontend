@@ -3,18 +3,28 @@ import { FaTiktok, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="relative">
-        <div className="relative flex justify-center items-center">
-            <img src='./Footer.png'/>
-            <div className='absolute inset-0 flex justify-center items-center pt-25'>
-            <p className='text-white font-extrabold pr-20 text-2xl'>FAQS</p>
-            <a href='https://www.tiktok.com/' target='_blank' rel='noreferrer'><FaTiktok className='text-white text-2xl mx-2'/></a>
-            <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'><FaFacebook className='text-white text-2xl mx-2'/></a>
-            <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'><FaInstagram className='text-white text-2xl mx-2'/></a>
-            <p className='text-white pl-20'>© 2021 MR.COCOBEE. ALL RIGHTS RESERVED.</p>
-            </div>
+    <footer>
+      <img src='/Footer.png' alt='Footer' className='w-full h-10 lg:h-30' />
+      <div className="bg-[#3FBFCA] text-white h-40 flex-col justify-center items-center">
+      
+      <p className='text-xl font-extrabold text-center p-2'>FAQS</p>
+
+       {/* Social Icons */}
+       <div className="flex gap-4 justify-center items-center">
+          <a href=''><FaFacebook className="w-6 h-6" /></a>
+          <a href=''><FaTiktok className="w-6 h-6" /></a>
+          <a href=''><FaInstagram className="w-6 h-6" /></a>
         </div>
+
+      {/* Copyright */}
+         <p className="text-lg p-2 text-center">
+           © COPYRIGHT 2025 COCOBEE PVT LTD. ALL RIGHTS RESERVED. 
+         </p>
+        
+       </div>
+      
     </footer>
+  
   )
 }
 

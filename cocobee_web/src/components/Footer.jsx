@@ -3,29 +3,28 @@ import { FaTiktok, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    
-    <div className="relative w-full h-[450px] bg-cover bg-center"
-      style={{ backgroundImage: "url('/Footer.png')" }}>
+    <footer>
+      <img src='/Footer.png' alt='Footer' className='w-full h-10 lg:h-30' />
+      <div className="bg-[#3FBFCA] text-white h-40 flex-col justify-center items-center">
       
-      {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center h">
-        <h3 className="text-lg font-bold">FAQs</h3>
-        
-        {/* Social Icons */}
-        <div className="flex gap-6 mt-4">
-          <FaFacebook className="w-6 h-6" />
-          <FaTiktok className="w-6 h-6" />
-          <FaInstagram className="w-6 h-6" />
+      <p className='text-xl font-extrabold text-center p-2'>FAQS</p>
+
+       {/* Social Icons */}
+       <div className="flex gap-4 justify-center items-center">
+          <a href=''><FaFacebook className="w-6 h-6" /></a>
+          <a href=''><FaTiktok className="w-6 h-6" /></a>
+          <a href=''><FaInstagram className="w-6 h-6" /></a>
         </div>
 
-        {/* Copyright */}
-        <p className="mt-4 text-xs">
-          © COPYRIGHT 2025 YI HAI CENTURY ENTERPRISE PTE LTD. ALL RIGHTS RESERVED.
-        </p>
-        <p className="text-xs underline">WEBSITE BY CREATIVE EWORLD PTE LTD</p>
-      </div>
-
-    </div>
+      {/* Copyright */}
+         <p className="text-lg p-2 text-center">
+           © COPYRIGHT 2025 COCOBEE PVT LTD. ALL RIGHTS RESERVED. 
+         </p>
+        
+       </div>
+      
+    </footer>
+  
   )
 }
 

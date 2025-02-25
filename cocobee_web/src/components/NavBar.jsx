@@ -51,12 +51,12 @@ const NavBar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-primary font-bold text-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-primary font-bold text-lg text-center">
             <a href="menu" className="block text-gray-700 hover:text-gray-900">Menu</a>
             <a href="outlets" className="block text-gray-700 hover:text-gray-900">Outlets</a>
             <a href="abouteus" className="block text-gray-700 hover:text-gray-900">About Us</a>
             <a href="contact" className="block text-gray-700 hover:text-gray-900">Contact Us</a>
-            <div className="flex space-x-4 mt-2">
+            <div className="flex space-x-4 mt-2 items-center justify-center">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaFacebook className="w-6 h-6" />
         </a>

@@ -12,7 +12,7 @@ const NavBar = () => {
           <div className="flex items-center">
            <img src={logo} alt="Cocobee" className="h-22 w-40" />
           </div>
-          <div className="hidden md:flex flex-grow justify-center space-x-4 ">
+          <div className="hidden md:flex flex-grow justify-center space-x-4 font-primary font-bold text-lg">
             <a href="menu" className="text-gray-700 hover:text-gray-900">Menu</a>
             <a href="outlets" className="text-gray-700 hover:text-gray-900">Outlets</a>
             <a href="abouteus" className="text-gray-700 hover:text-gray-900">About Us</a>
@@ -51,19 +51,19 @@ const NavBar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-primary font-bold text-lg">
             <a href="menu" className="block text-gray-700 hover:text-gray-900">Menu</a>
             <a href="outlets" className="block text-gray-700 hover:text-gray-900">Outlets</a>
             <a href="abouteus" className="block text-gray-700 hover:text-gray-900">About Us</a>
             <a href="contact" className="block text-gray-700 hover:text-gray-900">Contact Us</a>
             <div className="flex space-x-4 mt-2">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaFacebook className="w-6 h-6" />
         </a>
-        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaTiktok className="w-6 h-6" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#71B743] hover:text-[#71B743]">
           <FaInstagram className="w-6 h-6" />
         </a>
       </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const images = [
   "../src/assets/Sliders/1.png",
@@ -9,6 +10,7 @@ const images = [
 
 export default function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false); // State to track if slider has loaded
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -23,16 +25,34 @@ export default function Slider() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <div className="relative w-screen max-w-full mx-auto">
       {/* Image Wrapper */}
-      <div className="w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[450px] xl:h-[550px] overflow-hidden">
-        <img
+      <motion.div
+        className="w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[450px] xl:h-[550px] overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isLoaded ? 1 : 0 }}
+        transition={{
+          opacity: { duration: 1 },
+        }}
+      >
+        <motion.img
+          key={currentIndex}
           src={images[currentIndex]}
           alt="Slider"
-          className="w-full h-full object-cover transition-transform duration-1000 ease-in-out"
+          className="w-full h-full object-cover"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{
+            opacity: { duration: 1 },
+          }}
         />
-      </div>
+      </motion.div>
 
       {/* Left Button */}
       <button

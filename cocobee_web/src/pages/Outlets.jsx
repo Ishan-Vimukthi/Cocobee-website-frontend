@@ -24,11 +24,11 @@ const Outlets = () => {
               <img src="/Route.png" alt="Location icon" className="w-10 h-10 mt-1" />
               <div>
                 <h2 className="text-[#3FBFCA] font-bold text-xl">{outlet.name}</h2>
-                <p className="text-gray-700">{outlet.address}</p>
-                <p className="text-gray-700">MON - SUN : 10 AM - 10 PM</p>
+                <p className="text-gray-700 font-bold">{outlet.address}</p>
+                <p className="text-gray-700 font-bold">MON - SUN : 10 AM - 10 PM</p>
                 <div className="flex items-center space-x-2 mt-1">
                   <img src="/call.png" alt="Phone icon" className="w-5 h-5" />
-                  <span className="text-gray-700">{outlet.phone}</span>
+                  <span className="text-gray-700 font-bold">{outlet.phone}</span>
                 </div>
               </div>
             </div>

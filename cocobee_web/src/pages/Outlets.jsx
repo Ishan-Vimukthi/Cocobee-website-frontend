@@ -1,10 +1,15 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const Outlets = () => {
   return (
     <div>
-      <h1>Outlets</h1>
+        <NavBar/>
+        <h1 className='text-2xl font-extrabold justify-center text-center'>Outlets here</h1>
+        <Footer/>
     </div>
+   
   )
 }
 

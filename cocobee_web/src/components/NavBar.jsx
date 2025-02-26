@@ -21,17 +21,33 @@ const NavBar = () => {
             </a>
           </div>
           <div className="hidden md:flex flex-grow justify-center space-x-4 font-primary font-bold text-lg">
-            <a href="menu" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="menu"
+              className="text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               Menu
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
-            <a href="outlets" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="outlets"
+              className="text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               Outlets
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
-            <a href="abouteus" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="abouteus"
+              className="text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               About Us
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
-            <a href="contact" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="contact"
+              className="text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               Contact Us
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
           </div>
 
@@ -41,7 +57,7 @@ const NavBar = () => {
                 href="https://www.facebook.com/share/155Y54RLUe/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-800"
+                className="text-green-600 hover:text-[#3FBFCA]"
               >
                 <FaFacebook className="w-6 h-6" />
               </a>
@@ -49,7 +65,7 @@ const NavBar = () => {
                 href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-800"
+                className="text-green-600 hover:text-[#3FBFCA]"
               >
                 <FaTiktok className="w-6 h-6" />
               </a>
@@ -57,7 +73,7 @@ const NavBar = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-800"
+                className="text-green-600 hover:text-[#3FBFCA]"
               >
                 <FaInstagram className="w-6 h-6" />
               </a>
@@ -103,24 +119,40 @@ const NavBar = () => {
           className="md:hidden"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-primary font-bold text-lg text-center">
-            <a href="menu" className="block text-gray-700 hover:text-gray-900">
+            <a
+              href="menu"
+              className="block text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               Menu
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
-            <a href="outlets" className="block text-gray-700 hover:text-gray-900">
+            <a
+              href="outlets"
+              className="block text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               Outlets
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
-            <a href="abouteus" className="block text-gray-700 hover:text-gray-900">
+            <a
+              href="abouteus"
+              className="block text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               About Us
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
-            <a href="contact" className="block text-gray-700 hover:text-gray-900">
+            <a
+              href="contact"
+              className="block text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
+            >
               Contact Us
+              <div className="absolute bottom-0 left-0 w-0 transition-all duration-300 hover:w-full h-2 bg-[#3FBFCA]"></div>
             </a>
             <div className="flex space-x-4 mt-2 items-center justify-center">
               <a
                 href="https://www.facebook.com/share/155Y54RLUe/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#71B743] hover:text-[#71B743]"
+                className="text-[#71B743] hover:text-[#3FBFCA]"
               >
                 <FaFacebook className="w-6 h-6" />
               </a>
@@ -128,7 +160,7 @@ const NavBar = () => {
                 href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#71B743] hover:text-[#71B743]"
+                className="text-[#71B743] hover:text-[#3FBFCA]"
               >
                 <FaTiktok className="w-6 h-6" />
               </a>
@@ -136,7 +168,7 @@ const NavBar = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#71B743] hover:text-[#71B743]"
+                className="text-[#71B743] hover:text-[#3FBFCA]"
               >
                 <FaInstagram className="w-6 h-6" />
               </a>

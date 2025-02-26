@@ -30,7 +30,7 @@ const products = {
     { name: "Coconut Ice Cream with Honey", image: "/Products/Deserts/Coconut Ice cream with honey.png" },
     { name: "Nata de Coco with Honey", image: "/Products/Deserts/Nata de Coco with honey.png" },
     { name: "Coconut Jelly", image: "/Products/Deserts/Coconut Jelly.png" },
-    { name: "Coconut Jelly with Ice Cream", image: "/Products/Deserts/Coconut Jelly with ice cream.png" },
+    { name: "Coconut Jelly with Ice Cream", image: "/Products/Deserts/Coconut Jelly with ice cream.png" },
   ],
 };
 

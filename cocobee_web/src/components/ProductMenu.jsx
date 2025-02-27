@@ -15,7 +15,7 @@ const products = {
     { name: "Coconut Fresh Juice", image: "/Products/Juice/Coconut fresh juice.png" },
     { name: "Coconut Apple Juice", image: "/Products/Juice/Coconut apple juice.png" },
     { name: "Coconut Orange Juice", image: "/Products/Juice/Coconut orange juice.png" },
-    { name: "Coconut Watermelon Juice", image: "/Products/Juice/Coconut orange juice.png" },
+    { name: "Coconut Watermelon Juice", image: "/Products/Juice/Coconut watermelon juice.png" },
     { name: "Coconut Passion Juice", image: "/Products/Juice/Coconut passion juice.png" },
     { name: "Coconut Soursop Juice", image: "/Products/Juice/Coconut soursop juice.png" },
   ],
@@ -30,7 +30,7 @@ const products = {
     { name: "Coconut Ice Cream with Honey", image: "/Products/Deserts/Coconut Ice cream with honey.png" },
     { name: "Nata de Coco with Honey", image: "/Products/Deserts/Nata de Coco with honey.png" },
     { name: "Coconut Jelly", image: "/Products/Deserts/Coconut Jelly.png" },
-    { name: "Coconut Jelly with Ice Cream", image: "/Products/Deserts/Coconut Jelly with ice cream.png" },
+    { name: "Coconut Jelly with Ice Cream", image: "/Products/Deserts/Coconut Jelly with ice cream.png" },
   ],
 };
 

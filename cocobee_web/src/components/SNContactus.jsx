@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SubNavbarMenu = () => {
+const SNContactus = () => {
   return (
     <div className="relative w-full">
       {/* Image for Sub Navbar */}
@@ -13,11 +13,11 @@ const SubNavbarMenu = () => {
       {/* Overlay text */}
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
         <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-primary font-bold text-center">
-          OUR MENU
+          Contact US
         </h1>
       </div>
     </div>
   );
 };
 
-export default SubNavbarMenu;
+export default SNContactus;

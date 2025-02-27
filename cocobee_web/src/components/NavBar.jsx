@@ -57,7 +57,7 @@ const NavBar = () => {
                 href="https://www.facebook.com/share/155Y54RLUe/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-[#3FBFCA]"
+                className="text-[#71B743] hover:text-[#3FBFCA]"
               >
                 <FaFacebook className="w-6 h-6" />
               </a>
@@ -65,7 +65,7 @@ const NavBar = () => {
                 href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-[#3FBFCA]"
+                className="text-[#71B743] hover:text-[#3FBFCA]"
               >
                 <FaTiktok className="w-6 h-6" />
               </a>
@@ -73,7 +73,7 @@ const NavBar = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-600 hover:text-[#3FBFCA]"
+                className="text-[#71B743] hover:text-[#3FBFCA]"
               >
                 <FaInstagram className="w-6 h-6" />
               </a>

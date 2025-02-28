@@ -3,9 +3,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const images = [
-  "../src/assets/Sliders/1.png",
-  "../src/assets/Sliders/2.png",
-  "../src/assets/Sliders/4.png",
+  "/1.png",
+  "/2.png",
+  "/4.png",
 ];
 
 export default function Slider() {

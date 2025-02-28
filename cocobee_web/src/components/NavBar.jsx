@@ -54,7 +54,7 @@ const NavBar = () => {
                 } transition-all duration-300 h-2 bg-[#3FBFCA]`}
               />
             </a>
-            <a
+            {/* <a
               href="/abouteus" // Changed href
               className={` ${
                 location.pathname.includes("abouteus") ? "text-[#3FBFCA] border-b-4" : "text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
@@ -66,7 +66,7 @@ const NavBar = () => {
                   activeLink === "abouteus" ? "w-full" : "w-0"
                 } transition-all duration-300 h-2 bg-[#3FBFCA]`}
               />
-            </a>
+            </a> */}
             <a
               href="/contact" // Changed href
               className={` ${
@@ -177,7 +177,7 @@ const NavBar = () => {
                 } transition-all duration-300 h-2 bg-[#3FBFCA]`}
               />
             </a>
-            <a
+            {/* <a
               href="/abouteus" // Changed href
               className={` ${
                 location.pathname.includes("abouteus") ? "text-[#3FBFCA] border-b-4" : "text-gray-700 relative hover:text-[#3FBFCA] hover:border-b-4"
@@ -189,7 +189,7 @@ const NavBar = () => {
                   activeLink === "abouteus" ? "w-full" : "w-0"
                 } transition-all duration-300 h-2 bg-[#3FBFCA]`}
               />
-            </a>
+            </a> */}
             <a
               href="/contact" // Changed href
               className={` ${

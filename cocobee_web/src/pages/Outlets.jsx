@@ -17,7 +17,9 @@ const Outlets = () => {
       <NavBar />
       <SNOulets />
       <TextinOutlets />
-      <div className="container mx-auto px-4 py-10 flex justify-center items-center">
+      
+      {/* No Outlets Available */}
+      {/* <div className="container mx-auto px-4 py-10 flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {outlets.map((outlet, index) => (
             <div key={index} className="flex items-start space-x-4">
@@ -34,7 +36,9 @@ const Outlets = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
+      
       <Footer />
     </div>
   );

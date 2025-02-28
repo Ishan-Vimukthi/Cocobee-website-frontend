@@ -16,7 +16,7 @@ const Footer = () => {
 
       {/* Copyright */}
          <p className="text-lg p-2 text-center">
-           © COPYRIGHT 2025 Mr.COCOBEE ALL RIGHTS RESERVED. 
+           © COPYRIGHT 2025 MR. COCOBEE ALL RIGHTS RESERVED. 
          </p>
         
        </div>
